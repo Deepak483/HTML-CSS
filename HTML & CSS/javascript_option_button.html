@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <title>Select button in javascript</title>
+  </head>
+  <script>
+    // select and option button activation
+    function fn1() {
+      var selectbox= document.getElementById('selectbox');
+      alert("selected value is : "+selectbox.options[selectbox.selectedIndex].value);
+    }
+  </script>
+  <body>
+    <select name="selectbox" id="selectbox">
+      <option value="Telusko Learning">Telusko Learning</option>
+      <option value="Simple Snippets">Simple Snippets</option>
+      <option value="MKBHD">MKBHD</option>
+    </select>
+    <br /><br>
+    <button id="btn1" onclick="fn1()">Click me</button>
+  </body>
+</html>

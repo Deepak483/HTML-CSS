@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Background Different Property</title>
+    <style>
+      /* Background:url(`image.jpeg`);
+         background-repeat
+         background-size
+         background-position
+         background-attachment
+         shorthand syntax  */
+         /* Last Rule Order */
+         *{
+           margin:0;
+           padding:0;
+           box-sizing: border-box;
+
+         }
+      div {
+        min-height: 300px ;
+        color: green;
+        font-size:20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align:center;
+
+      }
+      .big-img {
+        background: url("./pictures/shahid-kapoor-7-1-b024.jpg");
+        /* background-size: 100px; */
+        background-repeat: round;
+        background-attachment: inherit;
+        /* background-repeat: repeat; */
+        background-size: cover;
+        background-position: center;
+      }
+      .small-img {
+        background: url('./pictures/heart.jpg');
+        /* background-repeat:no-repeat; */
+        /* background-repeat:repeat-x; */
+        /* background-size:cover; */
+        /* background-size: 100px; */
+        background-repeat: no-repeat;
+
+      }
+      .folder-img {
+        background:url(./pictures/pexels-frans-van-heerden-632522.jpg);
+        background-size: 100px;
+        background-repeat:no-repeat;
+        background-repeat: repeat-x;
+        background-repeat:repeat-y;
+        background-repeat:space;
+        background-repeat:round;
+        /* background-repeat: no-repeat; */
+        /* background-size: cover; */
+        background-repeat:no-repeat;
+        background-position:center;
+        background-position:27% 50%;
+        background-attachment: scroll;
+
+        
+      }
+    </style>
+  </head>
+  <body>
+    <div class="big-img">
+      <h1>I'M BIG IMAGE</h1>
+    </div>
+    <div class="small-img">
+      <h1>I'M SMALL IMAGE</h1>
+    </div>
+    <div class="folder-img">
+      <h1>I'M FOLDER IMAGE</h1>
+    </div>
+  </body>
+</html>
